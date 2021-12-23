@@ -1,0 +1,324 @@
+body{
+    font-family: "Malgun Gothic", Helvetica, Arial, sans-serif;
+    width: 99%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.main_form{
+    margin-left: -10px;
+    margin-top: -10px;
+    display: inline-block;
+    width: 101%;
+    position: fixed;
+}
+
+.order_form{
+    margin-left: -10px;
+    width: 101%;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    display: block;
+}
+
+.order_list{
+    display: inline-table;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+
+    margin-top: 150px;
+    margin-bottom: 105px;
+    margin-left: -10px;
+
+   
+
+
+}
+.second_text{
+    margin-left:128px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    color: rgb(138, 138, 138);
+}
+
+.order_table{
+    background-color: white;
+    border-top:2px solid rgb(196, 196, 196);
+    border-bottom:4px solid rgb(196, 196, 196);
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:10px;
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+
+}
+
+.order_table2 td{
+   font-size: 14px;
+   height: auto;
+}
+
+td{
+
+    padding: 6px;
+
+}
+
+.order_tr{
+    color: rgb(138, 138, 138);
+    
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+}
+.order_td_column{
+    padding-bottom: 5px;
+    
+}
+
+.menu_count_text{
+    background-color: white;
+    text-align: center;
+    border: 1px rgb(182, 182, 182) solid;
+    font-size: 20px;
+    padding:6px 12px;
+    margin-left: -4px;
+    margin-right:-5px;
+}
+
+.count_left_button{
+    height: 36px;
+    background-color: black;
+    margin-bottom: -12px;
+    color :white;
+    font-size: 25px;
+
+    width: 40px;
+    padding-top: 1px;
+    padding-bottom: 34px;
+    border:none;
+    border-radius: 4px 0px 0px 4px;
+    background: linear-gradient( to bottom, rgb(95, 95, 95), rgb(0, 0, 0) );
+    border: 1px rgb(182, 182, 182) solid;
+}
+
+.count_right_button{
+    height: 36px;
+    background-color: black;
+    margin-bottom: -12px;
+    color :white;
+    font-size: 25px;
+
+    width: 40px;
+    padding-top: 1px;
+    padding-bottom: 34px;
+    border:none;
+    border-radius: 0px 4px 4px 0px;
+    background: linear-gradient( to bottom, rgb(95, 95, 95), rgb(0, 0, 0) );
+    border: 1px rgb(182, 182, 182) solid;
+}
+
+
+.order_td_pic{
+text-align: left;
+
+}
+.td_pic{
+    width: 115px;
+    height: 80px;
+}
+
+.order_table2{
+    border-bottom:4px solid rgb(196, 196, 196);
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:30px;
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+
+}
+
+.change_text{
+    text-decoration: none;
+    color: rgb(95, 179, 243);
+
+}
+
+
+.footer_form{
+
+    margin-left: -10px;
+    width: 101%;
+    position: fixed; 
+    bottom: 0; 
+    width:101%;
+    height: 100px;
+}
+
+.menu_li{
+    margin-top: 40px;
+    padding-right:30px
+}
+.menu_text{
+    
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.cart_li{
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.cart_button{
+    width: 350px;
+    height: 50px;
+    border: none;
+    background: linear-gradient( to bottom, rgb(255, 104, 104), rgb(223, 36, 30) );
+    color: white;
+    font-size :17px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.container{
+    background-color: white;
+    margin-top: -13px;
+    box-shadow: 0px 0px 12px 1px rgb(82, 82, 82);
+}
+
+
+
+.head{
+
+ display: block;
+}
+
+.close_li{
+    height: 40px;
+    float: right;  
+}
+.close_button{
+    width: 40px;
+    height: 40px;
+    float: right;  
+    background-color: rgb(255, 255, 255);
+    border: 0px white solid;
+    margin-top: 10px;
+    margin-right: 15px;
+    height: 30px;
+}
+.head .container ul li{
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+}
+.pic{
+    height: 140px;
+}
+.add_text{
+    color :red;
+    font-size: 60px;
+}
+.item_name{
+    margin-left: 300px;
+    text-align: center;
+}
+.count_text{
+    color : rgb(114, 114, 114);
+}
+
+/* Hide the toggle checkbox */
+#expand-toggle1 {
+    display: none;
+  }
+#expand-toggle2 {
+    display: none;
+  } 
+
+#expand-toggle3 {
+    display: none;
+} 
+
+  .order_table2_text{
+    outline: none;
+    border: none;
+    width: 200px;
+}
+
+  .order_text{
+  	text-align: center;
+    outline: none;
+    border: none;
+    width: 50px;
+    font-size : 20px;
+    color : rgb(170,170,170);
+}
+  
+  
+  
+  /* Hide expandable content by default */
+  .expandable1 {
+    visibility:collapse;
+    background: white;
+  }
+
+  .expandable2 {
+    visibility:collapse;
+    background: white;
+  }
+
+  .expandable3 {
+    visibility:collapse;
+    background: white;
+  }
+  
+  /* Style the button */
+  #expand-btn {
+    color: white;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 11px;
+    background: linear-gradient( to bottom, rgb(255, 104, 104), rgb(223, 36, 30) );
+    border :0px;
+    border-radius: 5px;
+  }
+  
+
+
+
+
+  /* Show hidden content when the checkbox is checked */
+  #expand-toggle1:checked ~ * .expandable1 {
+    visibility: visible;
+  
+  }
+
+  #expand-toggle2:checked ~ * .expandable2 {
+    visibility: visible;
+  
+  }
+
+  #expand-toggle3:checked ~ * .expandable3 {
+    visibility: visible;
+  
+  }
+  
+  
+
+  

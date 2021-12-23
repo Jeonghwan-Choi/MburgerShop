@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+	<script type="text/javascript" src = "script/main.js"></script>
+<body style = "background-color:blue;">
+<script>
+function order_table(){
+    const rowCnt = 5;
+    const columnCnt = 2;
+        document.writeln("");
+        document.writeln('<table border="1" style="margin:100px;">');
+        for (let i = 0; i < rowCnt; i++) {
+        document.writeln('<tr>');
+        for (let j = 0; j < columnCnt; j++)  {
+            document.writeln('<td>');
+            document.writeln(i + ", " + j);
+            document.writeln('</td>');
+        }
+        document.writeln('</tr>')
+        }
+        document.writeln('</table>');
+}
+</script>
+<input type = "button" onclick="order_table()" style="margin: 30px;">
+<input type = "button" onclick="order_text()" style="margin: 30px;">
+</body>
+</html>

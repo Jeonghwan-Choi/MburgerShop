@@ -1,0 +1,13 @@
+<Context> 
+  <Resource
+   name="jdbc/mssql" 
+   auth="Container"
+   type="javax.sql.DataSource" 
+   username="pswel1" 
+   password="1234"
+   driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+   factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+   url="jdbc:sqlserver://221.154.8.88:1433;DatabaseName=mber"
+   maxActive="8" 
+   maxIdle="4"/>  
+</Context>
