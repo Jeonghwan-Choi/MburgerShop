@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/header.css "  >
+    <script type="text/javascript" src = "/script/main.js"></script>
+</head>
+
+<body>
+ <div id = "form1">
+    <div>
+        <ul id = "login">
+            <li id = "login-image">
+                <a href="#">
+                    <img src="https://www.mcdelivery.co.kr/kr//static/1629420806939/assets/00/img/icon_profile_gray.png" alt="Profile" width="20" class="profile-grey-avator">
+                </a>
+            </li >
+
+            <li >
+                <a href="#" onclick="showPopup(false)" >로그인</a>
+            </li>
+            <li >
+                <a href="#">주문조회</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul id="menu">
+        <li id="menu-logo" >
+            <a href="#" id="menu-logo-a" >M BergerShop</a>
+        </li>
+        <li>
+            <a href="#" id="menu-content">메뉴</a>
+        </li>
+        <li>
+            <a href="#" id="menu-content">마이페이지</a>
+        </li>
+
+      </ul>
+      
+    </div>  
+    
+   
+
+    </div>
+
+   
+
+    <div id="popup" class="hide">
+        <div class="content"  style="text-align: center;" >
+            <button class="close_button" onclick="closePopup()">
+                <img src="/productimg/icon/cancel.png" ><img>
+            </button>
+          <p>
+            
+                
+                  <h2 id ="login_logo" style="color: red; text-align :center; margin-left: 40px; ">M BergerShop</h2>
+                  <p style="font-size: 19px;">주문을 하시려면 로그인하시기 바랍니다.</p>
+                  <ul>
+                    <li>
+                      <a href=# >로그인</a>
+                    </li>
+                    <li>
+                        <a style="color:rgb(212, 209, 209); font-size: 19px;" >|</a>
+                    </li>
+                    <li>
+                      <a href=#>비회원 주문</a>
+                    </li>
+                    
+                  </ul>
+       
+                    <input class ="id" type = "text"  placeholder='아이디'>
+                    <br>
+                    <input class ="password" type = "password" placeholder='비밀번호' >
+                    <br>
+                    <br>
+                    <input class ="login_button" type = "submit" value = "로그인">
+                    <hr>
+                    <input class ="join_button" type = "button" value = "회원가입">
+                 
+                 
+                    
+                  
+            
+          </p>
+        
+        </div>
+
+        
+      </div>
+
+
+
+    
+</body>
+</html>

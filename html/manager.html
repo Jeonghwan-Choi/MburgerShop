@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/manager.css"  >
+    <script type="text/javascript" src = "/script/manager.js"></script>
+</head>
+<body>
+<form>
+    <div class = "main_form">
+        <div class = "left_information">
+            <div class = "order_state">
+                <div>
+                    <a>주문상태</a>
+                </div>
+                <table style="background-color: rgb(222, 154, 72);" >
+                    <tr>
+                        <td  >준비중</td>
+                        <td class = "order_state_td"  >34</td>
+                    </tr>
+                </table >
+                <table style="background-color: rgb(92, 157, 82);">
+                    <tr>
+                        <td >제조완료</td>
+                        <td class = "order_state_td">14</td>
+                    </tr>
+                </table>
+                <table style="background-color: rgb(122, 187, 218);">
+                    <tr>
+                        <td >전달완료</td>
+                        <td class = "order_state_td">14</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+
+        <div class = "main_information">
+            <div class = "main_information_title">
+                <p>주문현황</p>
+            </div>
+            
+            <div class = "main_information_content" >
+                <table class = "main_information_content_table" cellspacing="0" cellpadding="0" >
+                    <tr>
+                        <th class = "th_title">주문번호</th>
+                        <th class = "th_state">현재상태</th>
+                        <th class = "th_ordertime">주문시간</th>
+                        <th class = "th_overtime">경과시간</th>
+                        <th class = "th_content">상세보기</th>
+                    </tr>
+                    <tr >
+                        <td style="color: rgb(0, 150, 209);">43589</td>
+                        <td class = "td_state" style="color:rgb(222, 154, 72);" >준비중</td>
+                        <td>2021-09-07 / 16:30</td>
+                        <td>00:03</td>
+                        <td><a class = "content_button" href="#" onclick="showPopup(false)">상세보기</a></td>
+                    </tr>
+
+                    
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+   
+
+    
+</body>
+</html>

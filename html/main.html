@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="/css/main.css"  >
+
+</head>
+<body>
+    <div id = "form">
+
+        
+
+        <div class="slider">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <ul id="imgholder" class="imgs">
+                <li><img src="/productimg/adimage/adimage1.jpeg" ></li>
+                <li><img src="/productimg/adimage/adimage2.jpeg" ></li>
+                <li><img src="/productimg/adimage/adimage3.jpeg" ></li>
+            </ul>
+            <div class="bullets">
+                <label for="slide1">&nbsp;</label>
+                <label for="slide2">&nbsp;</label>
+                <label for="slide3">&nbsp;</label>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="front-menu">
+            <h2 style="color : rgb(95, 95, 95);"> 추 천 메 뉴</h2>     
+            <div id="bestitem">         
+
+                <div id="item">
+                  <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}"  >
+                    <img src="/productimg/set/set1.png" />
+                    <p >맥딜리버리 투게더팩</p>    
+                    <p style="color : rgb(55, 126, 34);" >₩17,000</p>
+                  </a>    
+                </div>
+
+                <div id="item">
+                    <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                      <img src="/productimg/set/set2.png" />
+                      <p>맥딜리버리 빅맥® 든든팩</p>    
+                      <p style="color : rgb(55, 126, 34);" >₩12,000</p>
+                    </a>    
+                </div>
+
+                <div id="item">
+                    <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                      <img src="/productimg/set/set3.png" />
+                      <p>맥딜리버리 상하이 버거 든든팩</p>    
+                      <p style="color : rgb(55, 126, 34);" >₩13,000</p>
+                    </a>    
+                </div>
+
+                <div id="item">
+                    <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                      <img src="/productimg/set/set4.png" />
+                      <p>맥딜리버리 1955® 버거 든든팩</p>    
+                      <p style="color : rgb(55, 126, 34);" >₩18,000</p>
+                    </a>    
+                </div>
+      
+    
+            </div>
+
+
+        </div>
+    </div>    
+
+</body>
+</html>

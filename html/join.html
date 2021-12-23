@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/join.css "  >
+</head>
+<body>
+
+    <form id ="join_form">
+        <div>
+            <a id = "main_text">회원가입</a>
+            <br>
+            <br>
+            <div>*필수 항목</div>
+            <br>
+            <div>
+                <div>* 성함 :</div>
+                <input type = "text" id = "name" name = "name" >
+
+                <div>* 성별 :</div>
+                <select name="gender" id="gender">
+                    <option value = "남자">남자</option>
+                    <option value = "여자">여자</option>
+                </select>
+
+
+                <div>* 휴대전화 번호 :</div>
+                <input type = "text" id = "phone" name = "phone" >
+                
+                <br>
+                <br>
+
+                <a id = "main_text">계정정보</a>
+                <br>
+                <br>
+                <div>* 이메일 :<br>
+                    <input type = "text" id = "email" name = "email" >
+                    <p id = "email-t">이메일 주소는 고객님의 안전한 거래와 회원정보 보호를 위해 정확하게 입력해 주세요.</p>
+                </div>
+
+                <div>* 비밀번호 :</div>
+                <input type = "password" id = "password" name = "password" >
+
+                <br>
+                <br>
+
+                </div>
+                <div class = "toggle_div">
+                    <input id="expand-toggle1" type="checkbox" name="toggle" value="1" onclick="oneCheckbox(this)">
+                     <input id="expand-toggle2" type="checkbox" name="toggle" value="2" onclick="oneCheckbox(this)">
+              </div>
+                
+            </div>
+            <input class = "join_button" type = "button" value = "계정생성" onclick="admincheck()">
+        </div>
+    </form>
+    
+</body>
+<script>
+    function admincheck() {
+		  if (document.getElementById("expand-toggle1").value == document.getElementById("expand-toggle2").value) {
+		    alert('이메일이 일치하지 않습니다.');
+		  }
+	}	  
+    
+</script>
+</html>

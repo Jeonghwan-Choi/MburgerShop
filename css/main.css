@@ -1,0 +1,153 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#form{
+    background-color: rgb(255, 255, 255);
+    display: table;
+    width: 1100px;
+    text-align: center;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+#front-menu{
+  
+   width : 945px;
+   position:relative ;
+   margin-top: 50px;
+   margin-left: 7%;
+   margin-bottom: 8%;
+   height: 450px;
+   border-radius: 10px;
+   background-color: rgb(255, 255, 255);
+   padding : 10px;
+   border : rgb(241, 166, 166) 1px solid;
+   box-shadow: 1px 1px 3px 3px rgb(224, 224, 224);
+
+
+
+   
+}
+
+.slider{
+    width: 85%;
+    height: 480px;  
+    position: relative;
+    margin-block:  7% auto;
+    margin-left: 7%;
+    margin-bottom: 50px;
+}
+.slider input[type=radio]{
+    display: none;
+}
+
+ul.imgs li{
+    position: absolute; /* 슬라이드가 겹쳐서 모여야 하므로 absolute 속성으로 배치 */
+    opacity: 0; /* 체크한 라디오박스 순서의 슬라이드만 표시되도록 기본 투명도 설정 */
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+ 
+}
+ul.imgs{
+    padding: 0;
+    margin: 0;
+}
+
+.bullets{
+    position: absolute;
+    left: 51%; /* 가로로 가운데 정렬 */
+    transform: translateX(-50%);
+    bottom: 20px; /* 슬라이드 밑에서 20px 간격 띄움 */
+    z-index: 2; /* 슬라이드 위에 보이도록 레이어 순위를 높임 */
+}
+.bullets label{
+    display: inline-block; /* 한 줄로 불릿 나열*/
+    border-radius: 50%; /* 원형 불릿으로 처리 */
+    background-color: rgba(0,0,0,0.55);
+    width: 20px; /* 불릿 너비 */
+    height: 20px; /* 불릿 높이 */
+    cursor: pointer;
+    border : 1px solid rgb(114, 114, 114);
+}
+
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+
+ul.imgs li{
+    position: absolute;
+    opacity: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition-delay: 0.9s; /* 트랜지션 지연 시간 지정 */
+}
+
+ul.imgs li img{
+    width: 965px;
+    height: 475px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px rgb(224, 224, 224);
+    
+}
+
+
+#item{
+    width:195px;
+ 
+    float:left;
+    margin-top: 23px;
+    margin-left:28px;
+    text-align: center;
+    border : 1px rgb(224, 224, 224) solid;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    font-size: 14px;
+}
+
+#item img{
+	width: 190px; 
+	height : 200px; 
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px rgb(224, 224, 224);
+    background-color: white;
+}
+#product_name{
+    color : black;
+    text-decoration: none;
+}
+#product_name:hover{
+    color : red;
+    
+
+}
+
+
+
+
+

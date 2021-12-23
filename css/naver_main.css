@@ -1,0 +1,10 @@
+.naver_button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.naver_button_img{
+    width: 100%;
+    height: 100%;
+}

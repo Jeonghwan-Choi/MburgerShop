@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/orderdetail.css "  >
+    <title>Document</title>
+</head>
+<body>
+
+    <form class = "OrderDetail_form">
+        <div class = "OrderDetail_form_div">
+            
+            <table id = "content_table1" class = "content_table">
+                <tr class = "content_table_tr" >
+                    <th class = "or_date">주문일자</th>
+                    <th class = "or_email">이메일</th>
+                    <th class = "or_address">주소</th>
+                    <th class = "or_name">상품명</th>
+                    <th class = "or_grade2">구분</th>
+                    <th class = "or_side">사이드</th>
+                </tr>
+
+              <!-- <c:forEach items="${orderList }"  var="orderVO" varStatus="status"> -->
+                  <tr>
+                      <td rowspan="3" >2021-09-16</td>
+                      <td rowspan="3" >yzon007@naver.com</td>
+                      <td rowspan="3">경기도 안양시 만안구 안양천서로 311 1283동 9430호</td>
+                      <td rowspan="3">단품 - burger1</td>
+                      <td rowspan="3">라지세트</td>                                
+                      <td >품절 시 맥너겟/치즈스틱으로 변경될 수 있습니다.</td>                             
+                  </tr>
+                  <tr>
+
+                      <td>콜라 - 선택안함</td>
+                  </tr>
+                  <tr>
+                      <td>선택안함</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" >2021-09-16</td>
+                    <td rowspan="3" >yzon007@naver.com</td>
+                    <td rowspan="3">경기도 안양시 만안구 안양천서로 311 1283동 9430호</td>
+                    <td rowspan="3">단품 - burger1</td>
+                    <td rowspan="3">라지세트</td>                                
+                    <td >품절 시 맥너겟/치즈스틱으로 변경될 수 있습니다.</td>                             
+                </tr>
+                <tr>
+
+                    <td>콜라 - 선택안함</td>
+                </tr>
+                <tr>
+                    <td>선택안함</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" >2021-09-16</td>
+                    <td rowspan="3" >yzon007@naver.com</td>
+                    <td rowspan="3">경기도 안양시 만안구 안양천서로 311 1283동 9430호</td>
+                    <td rowspan="3">단품 - burger1</td>
+                    <td rowspan="3">라지세트</td>                                
+                    <td >품절 시 맥너겟/치즈스틱으로 변경될 수 있습니다.</td>                             
+                </tr>
+                <tr>
+
+                    <td>콜라 - 선택안함</td>
+                </tr>
+                <tr>
+                    <td>선택안함</td>
+                </tr>
+              <!-- </c:forEach> -->
+
+
+
+            </table>
+
+            <input class = "order_button" type = "button" value = "주문취소">
+            <input class = "order_button" type = "button" value = "조회로 돌아가기">
+
+        </div>
+    </form>
+
+    
+</body>
+</html>

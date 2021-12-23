@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/menu.css "  >
+</head>
+<body>
+
+ <div id="form" >   
+    <div id="left-menu" >
+        <ul>
+            <li style="background-color: rgb(122, 122, 122); " id = "menu_li_top" ><div >일반메뉴</div></li>
+            <li  ><a href = #>추천메뉴</a></li>
+            <li><a href = #>버거 & 세트</a></li>
+            <li><a href = #>스낵 & 사이드</a></li>
+            <li><a href = #>음료</a></li>
+            <li><a href = #>디저트</a></li>
+        </ul>
+    </div>
+
+    <div id="front-menu">
+        <h2 style="color : rgb(95, 95, 95);"> 추 천 메 뉴</h2>     
+        <div id="bestitem">         
+
+            <div id="item">
+              <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}"  >
+                <img src="/productimg/set/set1.png" />
+                <p >맥딜리버리 투게더팩</p>    
+                <p style="color : rgb(55, 126, 34);" >₩17,000</p>
+              </a>    
+            </div>
+
+            <div id="item">
+                <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                  <img src="/productimg/set/set2.png" />
+                  <p>맥딜리버리 빅맥® 든든팩</p>    
+                  <p style="color : rgb(55, 126, 34);" >₩12,000</p>
+                </a>    
+            </div>
+
+            <div id="item">
+                <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                  <img src="/productimg/set/set3.png" />
+                  <p>맥딜리버리 상하이 버거 든든팩</p>    
+                  <p style="color : rgb(55, 126, 34);" >₩13,000</p>
+                </a>    
+            </div>
+            <div id="item">
+                <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}"  >
+                  <img src="/productimg/set/set1.png" />
+                  <p >맥딜리버리 투게더팩</p>    
+                  <p style="color : rgb(55, 126, 34);" >₩17,000</p>
+                </a>    
+              </div>
+  
+              <div id="item">
+                  <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                    <img src="/productimg/set/set2.png" />
+                    <p>맥딜리버리 빅맥® 든든팩</p>    
+                    <p style="color : rgb(55, 126, 34);" >₩12,000</p>
+                  </a>    
+              </div>
+  
+              <div id="item">
+                  <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                    <img src="/productimg/set/set3.png" />
+                    <p>맥딜리버리 상하이 버거 든든팩</p>    
+                    <p style="color : rgb(55, 126, 34);" >₩13,000</p>
+                  </a>    
+              </div>
+              <div id="item">
+                <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}"  >
+                  <img src="/productimg/set/set1.png" />
+                  <p >맥딜리버리 투게더팩</p>    
+                  <p style="color : rgb(55, 126, 34);" >₩17,000</p>
+                </a>    
+              </div>
+  
+              <div id="item">
+                  <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                    <img src="/productimg/set/set2.png" />
+                    <p>맥딜리버리 빅맥® 든든팩</p>    
+                    <p style="color : rgb(55, 126, 34);" >₩12,000</p>
+                  </a>    
+              </div>
+  
+              <div id="item">
+                  <a id = "product_name" href="NonageServlet?command=product_detail&pseq=${productVO.pseq}">
+                    <img src="/productimg/set/set3.png" />
+                    <p>맥딜리버리 상하이 버거 든든팩</p>    
+                    <p style="color : rgb(55, 126, 34);" >₩13,000</p>
+                  </a>    
+              </div>
+        </div>
+
+
+
+
+
+    </div>  
+
+    <div>
+      <div class = "right_menu">
+        <div style="padding-top: 10px; background-color: rgb(235, 235, 235); padding-bottom: 10px">내 주문목록</div>
+
+        <div style="text-align: left;">
+          <div >
+            <table class = "order_table">
+              <tr>
+                <td class = "topic_td" >배달주소 :</td>
+                <td class = "content_td" >서울시 강남구 테헤란로</td>
+              </tr>
+              <tr>
+                <td class = "change_td" >
+                  <a>변경</a>
+                </td>
+              </tr>
+            </table>
+          </div>    
+          <hr>
+          <div>
+            <table class = "order_table">
+              <tr>
+                <td class = "topic_td" >
+                  <a>총 주문 합계</a>
+                </td>
+                <td class = "content_td" style ="color : rgb(88,140,42); font-size: 25px;" >₩ 16,400</td>
+                
+              </tr>
+              <tr>
+                <td class = "order_button_td"  colspan="2">
+                  <input class = "order_button" type="button" value = "결제" >
+                </td>
+                
+              </tr> 
+            </table>
+          </div>
+
+        </div>
+        <div style="text-align: left;padding-left: 10px; padding-bottom: 8px;background-color: rgb(235, 235, 235); padding-top: 10px;">
+          주문 세부사항
+        </div>
+
+        <table class = "order_detail_table">
+
+          <tr>
+            <td class = "order_detail_table_td_num">1</td>
+            <td class = "order_detail_table_td"><img class = "order_detail_table_td_img" src="/productimg/set/set2.png"></td>
+            <td class = "order_detail_table_td_side">• 단품 - 트리플 치즈버거</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td_side">• 코카-콜라 - 라지</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td_side">• 품절 시 맥너겟/치즈스틱으로 배송될 수 있습니다. 장바구니를 확인해주세요.</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td_side">• 선택 안 함.</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td">
+              <input class = "order_detail_button" type="button" value = "수정">
+              <input class = "order_detail_button" type="button" value = "삭제">
+            </td>
+            <td class = "order_detail_table_td_price">₩ 8,500</td>
+          </tr>
+        </table>
+
+
+        <table class = "order_detail_table">
+
+          <tr>
+            <td class = "order_detail_table_td_num">2</td>
+            <td class = "order_detail_table_td"><img class = "order_detail_table_td_img" src="/productimg/set/set2.png"></td>
+            <td class = "order_detail_table_td_side">• 단품 - 트리플 치즈버거</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td_side">• 코카-콜라 - 라지</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td_side">• 품절 시 맥너겟/치즈스틱으로 배송될 수 있습니다. 장바구니를 확인해주세요.</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td_side">• 선택 안 함.</td>
+          </tr>
+          <tr>
+            <td class = "order_detail_table_td"></td>
+            <td class = "order_detail_table_td">
+              <input class = "order_detail_button" type="button" value = "수정">
+              <input class = "order_detail_button" type="button" value = "삭제">
+            </td>
+            <td class = "order_detail_table_td_price">₩ 8,500</td>
+          </tr>
+        </table>
+
+        
+
+      </div>
+
+    </div>
+    
+</div>   
+</body>
+</html>

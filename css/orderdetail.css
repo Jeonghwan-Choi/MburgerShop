@@ -1,0 +1,58 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.OrderDetail_form{
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+.OrderDetail_form_div{
+    margin: 0 auto;
+
+    width: 80%;
+    text-align: center;
+}
+
+.content_table{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 1px rgb(141, 141, 141) solid;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 3px rgb(224, 224, 224);
+}
+.content_table th{
+    color: white;
+    padding: 8px;
+    background: linear-gradient( to bottom, rgb(252, 109, 109), rgb(255, 68, 61) );
+}
+
+
+.content_table td{
+    border: 1px rgb(161, 161, 161) solid;
+    color: rgb(97, 97, 97);
+}
+
+.or_date{
+    width: 110px;
+
+}
+
+.order_button{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top : 20px;
+    width: 160px;
+    height: 35px;
+    border: none;
+    background: linear-gradient( to bottom, rgb(255, 79, 79), rgb(255, 8, 0) );
+    box-shadow: 1px 1px 3px 3px rgb(224, 224, 224);
+    color: white;
+    font-size :16px;
+    border-radius: 5px;
+}

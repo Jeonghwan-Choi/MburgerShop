@@ -1,0 +1,65 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main_form{
+    width: 1100px;
+    min-height: 400px;
+    background-color: white;
+    border: 1px rgb(207, 207, 207) solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10%;
+    
+
+}
+.form_title{
+    width: 100%;
+    margin-top :20px;
+    padding-top : 1px;
+
+    padding-bottom : 1px;
+    background-color: rgb(246,245,245);
+    
+}
+.form_title_text{
+    color: rgb(139, 139, 139);
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.form_content_title{
+
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+
+    width: 60%;
+    border: 1px rgb(207, 207, 207) solid;
+    border-radius: 10px;
+    padding:20px;
+}
+
+.form_content_main{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(252, 241, 241);
+    padding-top:15px;
+    padding-bottom: 15px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.order_text{
+
+     color: rgb(83, 83, 83); ;
+     font-size: 17px;
+}
+.order_number{
+    color :red;
+    font-size: 20px;
+}

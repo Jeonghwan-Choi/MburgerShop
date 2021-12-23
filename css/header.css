@@ -1,0 +1,200 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#form1{
+    background-color: rgb(255, 255, 255);
+    display: table;
+    width: 1100px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#login{
+
+    list-style-type:none;
+    margin:20px;
+    padding:0;
+    text-align: right;
+}
+
+#login li {
+    display:inline-block;
+    padding-left :30px;
+
+}
+
+#login li a{
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color : #717172;
+    font-weight: 640;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+#menu{
+
+    list-style-type:none;
+
+    padding:0;
+    position: absolute;
+    box-shadow: 1px 1px 3px 3px rgb(224, 224, 224);
+    text-align: center;
+    margin-top: -15px;
+    border-radius: 10px;
+    width: 1100px;
+    background-color: #2f3036;
+}
+
+ul #menu-logo-a {  
+
+    float: left;  
+}
+
+ul #menu-content {  
+ 
+    float: left;  
+}
+
+
+
+
+
+#menu-logo-a{
+  
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    color:red;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+li #menu-content {
+
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+    border-right: 1px solid #3d3e41;
+    background: lcinear-gradient( to bottom, #585858, #2f3036 );
+    
+    
+}
+/*Hover state for top level links*/
+li:hover #menu-content {
+    color:rgb(167, 163, 163)
+   
+}
+/*Style for dropdown links*/
+li:hover ul #menu-content {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+    
+}
+/*Hover state for dropdown links*/
+
+#popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 2;
+  
+  }
+  
+  #popup.hide {
+    display: none;
+    z-index: 2;
+    
+  }
+  
+  #popup.has-filter {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  #popup .content {
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 500px;
+    height: 430px;  
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgb(224, 224, 224);
+  }
+
+  #popup .content ul li{
+
+      display: inline;
+      margin-right: 25px;
+      border-left: ;
+  }
+
+  #popup .content ul li a {
+    
+    font-size: 16px;
+    color:rgb(94, 93, 93);
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+  #popup .content ul li a:hover {
+    color: red;  
+}
+
+.id, .password{
+    font-size: 15px ;
+    width: 230px;
+    height: 35px;
+
+    border: 1px solid rgb(211, 211, 211);
+    margin:0 auto;
+    margin-left: 8px;
+}
+
+.login_button{
+margin-top: 15px;
+}
+
+.login_button,.join_button{
+    margin-top: 15px;
+    background: linear-gradient( to bottom, rgb(255, 104, 104), rgb(223, 36, 30) );
+    color: white;
+    width: 230px;
+    height: 40px;
+    font-size: 20px;
+    border :0px;
+    border-radius: 5px;
+}
+.content button{
+    float: right;  
+    background-color: white;
+    border: 0px white solid;
+}
+
+
+
+
+

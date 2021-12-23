@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/orderinquiry.css?ver=1.1 "  >
+    <script type="text/javascript" src = "/script/manager.js"></script>
+
+</head>
+<body>
+
+    <form class = "main_form">
+
+        
+        <div class = "mymenu" >
+            <ul>
+                <li class = "li_title">
+                    <a>마이페이지</a>
+                </li>
+                <ul>
+                    <li class = "li_content">
+                        <a href= "#">주문조회</a>
+                    </li>
+                </ul>
+            </ul>
+
+        </div>
+        <div class = "mycontent">
+            <div style="padding:10px;"></div>
+                <a style="font-size: 20px;  ">나의 주문내역</a>
+
+            <div class = "mycontent_content">
+                <div class = "mycontent_information_ordernum">
+                    <table class = "mypage_table" border="1" style="width:100%; border: 1px rgb(170, 170, 170) solid;">
+                        <tr>
+                            <th>주문번호</th>
+                            <th>이메일</th>
+                            <th>주소</th>
+                            <th>금액</th>
+                            <th>상세정보</th>
+                        </tr>
+                        <tr>
+                            <td class ="mypage_content_td_ordernum" ></td>
+                            <td class ="mypage_content_td_email"></td>
+                            <td class ="mypage_content_td_address"></td>
+                            <td class ="mypage_content_td_price"></td>
+                            <td class ="mypage_content_td_information"><input type="button" class = "content_button" value = "상세보기" onclick="location.href='#popupedit1'"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+
+                <div class = "mycontent_order_information">
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </form>
+
+    <div class="editbutton"> 						
+        <a class="btn btn-link" href="#popupedit1">Edit</a></div>
+        <div id="popupedit1" class="overlay">
+        <div class="popup10">
+        <a class="close" href="#"></a>
+
+                
+                    
+                      <h2 id ="login_logo" style="color: red; text-align :center; margin-left: 40px; ">상세정보</h2>
+                      
+                      <table class = "content_table" border="1">
+                          <tr class = "content_table_tr" >
+                              <th>제품명</th>
+                              <th>수량</th>
+                              <th>구분</th>
+                              <th>사이드</th>
+                          </tr>
+    
+                            <tr>
+                                <td rowspan="3">갈릭버거</td>
+                                <td rowspan="3" >1</td>
+                                <td rowspan="3" >세트</td>
+                                <td>품절 시 맥너겟/치즈스틱으로 배송될 수 있습니다. 장바구니를 확인해주세요</td>
+                            </tr>
+                            <tr>
+    
+                                <td>코카-콜라 - 미디엄</td>
+                            </tr>
+                            <tr>
+                                <td> 선택 안 함</td>
+                            </tr>
+    
+                            <tr>
+                                <td rowspan="3">치즈버거</td>
+                                <td rowspan="3" >2</td>
+                                <td rowspan="3" >세트</td>
+                                <td>품절 시 맥너겟/치즈스틱으로 배송될 수 있습니다. 장바구니를 확인해주세요</td>
+                            </tr>
+                            <tr>
+    
+                                <td>코카-콜라 - 미디엄</td>
+                            </tr>
+                            <tr>
+                                <td> 선택 안 함</td>
+                            </tr>
+    
+    
+                      </table>
+              </p>
+            
+            </div>
+          </div>
+
+
+  
+    
+</body>
+</html>

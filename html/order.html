@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/order.css "  >
+    <script type="text/javascript" src = "/script/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+        function oneCheckbox(a){
+    
+            var obj = document.getElementsByName("toggle");
+    
+            for(var i=0; i<obj.length; i++){
+    
+                if(obj[i] != a){
+    
+                    obj[i].checked = false;
+    
+                }
+    
+            }
+    
+        }
+    
+    </script>
+
+
+
+    <form id = "order_form" method="post" action="MbergerServlet?command=insert_cart">
+    
+    <input type="checkbox" id="expand-toggle1" name ="toggle" onclick="oneCheckbox(this)" value = "1" />
+    <input type="checkbox" id="expand-toggle2" name ="toggle" onclick="oneCheckbox(this)" value = "2"/>
+    <input type="checkbox" id="expand-toggle3" name ="toggle" onclick="oneCheckbox(this)" value = "3"/> 
+    
+    
+
+    
+        <input type = "hidden" name ="email" value = "${sessionScope.loginUser.email}">
+   <c:forEach items="${gradeProductList }"  var="productVO"  varStatus="status"  >
+   
+    <input type = "text" name ="" value = "${productVO.code}">
+    <input type = "text" value = "${productVO.name}">
+    <input type = "text" value = "${productVO.grade}">
+    
+    <br>
+    
+
+   </c:forEach>
+   
+
+    
+    <div class="main_form" >
+
+            
+            <div class="head">
+                <div class="container">
+                <c:forEach items="${gradeProductList }"  var="productVO"  varStatus="status"  begin="1" end="2">
+                        <ul>
+                        <li style="padding-right:30px">
+                            <div class="count">
+                                <span class="add_text">0</span>
+                                <br> 
+                                <span class="count_text">수량</span>
+                            </div>
+                        </li>
+                        <li><div ><img class="pic" src="productimg/${productVO.grade}/${productVO.name}.png" alt=""></div></li> 
+                        <li  ><h1 class="item_name" >${productVO.name}</h1></li>
+                        <li class="close_li"  ><button class="close_button" onclick="closePopup()">
+                            <img src="productimg/icon/cancel.png" ><img>
+                        </button></li>   
+                        </ul>
+                 </c:forEach>
+   
+                </div>
+            </div>    
+        </div>
+
+        <div class="order_form" >
+            <div class="order_list">
+
+                <div>
+                    <table class = "order_table">
+          
+                        <tr class = "order_tr">
+                            <th class = "order_th"  style="float: left; "  ><h3>1단계 : 메뉴를 선택하세요</h3></th>
+                            <th></th>
+                            <th></th>
+                            <th class = "order_th" style="text-align: right;" >가격</th>
+                            <th class = "order_th" style="text-align: right;">kcal</th>
+                        </tr>
+                     <c:forEach items="${gradeProductList }"  var="productVO" varStatus="status">
+                        <tr>
+                                <td  class="order_td_column" style="width: 200px; text-align: center; "  >
+                                    <label for="expand-toggle1"id="expand-btn">선택</label>
+
+                                </td>
+                                <td class ="order_td_pic" style="width: 100px; ">
+                                    <img class="td_pic" src="productimg/set/set2.png" alt="">
+                                </td>
+                                <td ><h4>${productVO.grade2 }</h4></td>
+                                <td name="price_1" style="text-align: right; color: rgb(170, 170, 170); " >₩ ${productVO.price}</td>
+                                <td  style="text-align: right; color: rgb(170, 170, 170); "><a>${productVO.kcal } kcal</a></td>
+                            
+                        </tr>
+                    </c:forEach>    
+
+
+                    </table>
+                    <h3 class = "second_text">2단계 : 메뉴를 항목을 선택하세요</h3>
+                    <table class = "order_table2" >
+        
+                        <tr class = "expandable1" style="border-top : 1px rgb(182, 182, 182) solid;">
+                            <td  style="width: 30px; "><img src="productimg/icon/cancel.png" ><img></td>
+                            <td name="grade2_1" style="width: 120px; border-right: 1px rgb(182, 182, 182) solid; ">라지세트</td>
+                            <td name="name_1" style="width: 450px; padding-left: 30px;  border-right: 1px rgb(182, 182, 182) solid;" >• 단품 - 창녕 갈릭 버거</td>
+                            <td  style=" width:150px; height: 80px; ">
+                                <div name = "side_1" style="width: 150px;">
+                                    <input type="text" class = "order_table2_text" name = "side_1_1" value = "품절 시 변경될수 있습니다 주의하세요" readonly>
+                                </div>
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ; ">변경</a>  </td>
+                        </tr>
+                        <tr class = "expandable1">
+                            <td></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;"></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td name = "side_2" >• 코카-콜라 - 미디엄
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ;">변경</a>  </td>
+                        </tr> 
+                        <tr class = "expandable1">
+                            <td ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;"></td>
+                            <td name = "side_3"  >• 선택 안 함
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ;">변경</a>  </td>
+                        </tr>     
+                        </table>
+
+                        <table class = "order_table2" >
+                        <tr class = "expandable2" style="border-top : 1px rgb(182, 182, 182) solid;">
+                            <td  style="width: 30px; "><img src="productimg/icon/cancel.png" ><img></td>
+                            <td  style="width: 120px; border-right: 1px rgb(182, 182, 182) solid; ">세트</td>
+                            <td  style="width: 450px; padding-left: 30px;  border-right: 1px rgb(182, 182, 182) solid;  ">• 단품 - 창녕 갈릭 버거</td>
+                            <td  style=" width:150px; height: 80px; ">
+                                <div style="width: 150px;">
+                                    • 품절 시 맥너겟/치즈스틱으로 배송될 수 있습니다. 장바구니를 확인해주세요
+                                </div>
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ; ">변경</a>  </td>
+                        </tr>
+                        <tr  class = "expandable2">
+                            <td></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;"></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td  >• 코카-콜라 - 미디엄
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ;">변경</a>  </td>
+                        </tr> 
+                        <tr  class = "expandable2">
+                            <td ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;"></td>
+                            <td>• 선택 안 함
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ;">변경</a>  </td>
+                        </tr> 
+                         
+                    </table>
+                    
+                                            <table class = "order_table2" >
+                        <tr class = "expandable3" style="border-top : 1px rgb(182, 182, 182) solid;">
+                            <td  style="width: 30px; "><img src="productimg/icon/cancel.png" ><img></td>
+                            <td  style="width: 120px; border-right: 1px rgb(182, 182, 182) solid; ">단품</td>
+                            <td  style="width: 450px; padding-left: 30px;  border-right: 1px rgb(182, 182, 182) solid;  ">• 단품 - 창녕 갈릭 버거</td>
+                            <td  style=" width:150px; height: 80px;  ">
+                                <div style="width: 150px;">
+                                    • 선택 안 함
+                                </div>
+                            </td>
+                            <td style="width: 30px;"> </td>
+                        </tr>
+                        <tr  class = "expandable3">
+                            <td></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td ></td>
+                            <td >  </td>
+                        </tr> 
+                        <tr  class = "expandable3">
+                            <td ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;" ></td>
+                            <td style="border-right: 1px rgb(182, 182, 182)solid;"></td>
+                            <td>
+                            </td>
+                            <td style="width: 30px;"> <a class ="change_text" href="#" style="float:right ;"></a>  </td>
+                        </tr> 
+                         
+                    </table>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_form" >
+            
+            <div class="head">
+                <div class="container">
+                        <ul>
+                        <li class="menu_li">
+                            <div>
+                                <span style = "color :red;" >《</span>
+                                <a href="MbergerServlet?command=menu" class="menu_text">메뉴로 돌아가기</a>
+
+                            </div>
+                        </li>
+
+                        <li class = "cart_li" >
+                        <input class = "cart_button" type = "submit" value = "카트에 담기">  
+                        </ul>
+
+
+                    
+                </div>
+            </div>    
+        </div>
+
+            
+
+    </form>
+</body>
+</html>
